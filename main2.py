@@ -13,7 +13,7 @@ def init():
 	global students
 	global courses
 	global enrollments
-	global branches 
+	global branches
 	global archived_enrolls
 	with open("files/branches.json", "r") as f:
 		branches = json.load(f)
@@ -41,7 +41,7 @@ def save():
 
 def menu():
 	print "Welcome!"
-	while True:
+	while 1:
 		print "1. Add a student"
 		print "2. Delete student data"
 		print "3. Modify student details"
